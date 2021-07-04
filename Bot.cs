@@ -40,7 +40,7 @@ namespace BotDiscord
             client.MessageReceived += MessageReceived;           
             await command.AddModulesAsync(Assembly.GetEntryAssembly(), service);
             
-            string token = "ODQ3NDUyMTI5NTEzODMyNTE4.YK-RTA.9qMuEWThnYB_ojWt0ZvEazHdgFk";
+            string token = "Токен вашего бота";
             await client.LoginAsync(Discord.TokenType.Bot, token);
             await client.StartAsync();
             await Task.Delay(-1);
